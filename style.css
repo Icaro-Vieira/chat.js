@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-green: #36f36e;
+  --color-green-hover: #28d045;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #111b21;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container_message {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+#acesso {
+  width: 300px;
+  height: 400px;
+  padding: 30px 30px;
+  background-color: #233138;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#svg {
+  flex-direction: column;
+  position: relative;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  color: var(--color-green);
+}
+
+h1 {
+  display: flex;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+#info {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  max-width: 290px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+}
+
+#apelido {
+  outline: 0;
+  border: 2px solid var(--color-green);
+  padding: 5px;
+  border-radius: 0.5rem;
+}
+
+#button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--color-green);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 3px;
+  transition: background 0.3s, color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#button:hover {
+  background-color: var(--color-green-hover);
+  color: #fff;
+}
+
+#historico_mensagens,
+#lista_usuarios {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 2px solid #45c5bf;
+  height: auto;
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#sala_chat {
+  width: 100vw;
+  display: none;
+  font-size: 15px;
+}
+
+#option {
+  background-color: #d8d8d8;
+}
+
+#acesso_usuario form {
+  margin: 0;
+}
+
+#historico_mensagens {
+  border-right: 0;
+}
+
+#historico_mensagens p {
+  font-size: 12px;
+  margin-bottom: -5px;
+}
+
+#lista_usuarios {
+  border-left: 1px solid var(--color-green);
+  height: 554px;
+  width: 20%;
+  font-size: 16px;
+}
+
+#historico_mensagens .sistema {
+  width: 200px;
+  background-color: var(--color-green);
+  color: #fff;
+  font-weight: 500;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+.sistema {
+  font-size: 16px;
+}
+
+#texto_mensagem {
+  padding: 7px 0;
+  width: 80%;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-green);
+  font-size: 20px;
+}
+
+#historico_mensagens .privada {
+  background-color: #ccc;
+  color: #000;
+  font-weight: bold;
+}
